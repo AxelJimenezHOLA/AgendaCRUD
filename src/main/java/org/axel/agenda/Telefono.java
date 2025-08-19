@@ -12,5 +12,6 @@ public class Telefono {
     }
 
     public int getId() { return id; }
+    public int getPersonaId() { return personaId; }
     public String getTelefono() { return telefono; }
 }
