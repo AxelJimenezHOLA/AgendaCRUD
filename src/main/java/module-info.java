@@ -15,4 +15,6 @@ module org.axel.agenda {
 
     opens org.axel.agenda to javafx.fxml;
     exports org.axel.agenda;
+    exports org.axel.agenda.controller;
+    opens org.axel.agenda.controller to javafx.fxml;
 }
