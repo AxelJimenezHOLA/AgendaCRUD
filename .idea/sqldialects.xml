@@ -2,6 +2,8 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/src/main/java/org/axel/agenda/repository/DireccionRepositoryMariaDB.java" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/axel/agenda/repository/PersonaDireccionRepositoryMariaDB.java" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/axel/agenda/repository/PersonaRepositoryMariaDB.java" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/axel/agenda/repository/TelefonoRepositoryMariaDB.java" dialect="MariaDB" />
   </component>
 </project>
