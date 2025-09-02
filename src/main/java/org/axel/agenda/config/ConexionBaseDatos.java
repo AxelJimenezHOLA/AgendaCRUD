@@ -11,7 +11,7 @@ public class ConexionBaseDatos {
 
     private ConexionBaseDatos() {}
 
-    public static Connection getConnection() throws SQLException {
+    public static Connection obtenerConexion() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }

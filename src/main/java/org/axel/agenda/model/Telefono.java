@@ -3,17 +3,17 @@ package org.axel.agenda.model;
 public class Telefono {
     private int id;
     private int personaId;
-    private String telefono;
+    private String numero;
 
-    public Telefono(int id, int personaId, String telefono) {
+    public Telefono(int id, int personaId, String numero) {
         this.id = id;
         this.personaId = personaId;
-        this.telefono = telefono;
+        this.numero = numero;
     }
 
-    public Telefono(int personaId, String telefono) {
+    public Telefono(int personaId, String numero) {
         this.personaId = personaId;
-        this.telefono = telefono;
+        this.numero = numero;
     }
 
     public int getId() {
@@ -32,11 +32,11 @@ public class Telefono {
         this.personaId = personaId;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public String getNumero() {
+        return numero;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setNumero(String numero) {
+        this.numero = numero;
     }
 }
