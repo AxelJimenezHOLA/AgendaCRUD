@@ -81,7 +81,7 @@ public class PersonaRepositoryMariaDB implements PersonaRepository {
             Connection conn = ConexionBaseDatos.obtenerConexion();
             PreparedStatement stmt = conn.prepareStatement(sql)
         ) {
-            ResultSet rs = stmt.executeQuery(sql);
+            ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 personas.add(new Persona(rs.getInt("id"), rs.getString("nombre")));
             }

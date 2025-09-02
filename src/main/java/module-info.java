@@ -14,6 +14,7 @@ module org.axel.agenda {
     requires org.mariadb.jdbc;
 
     opens org.axel.agenda to javafx.fxml;
+    opens org.axel.agenda.model to javafx.base;
     exports org.axel.agenda;
     exports org.axel.agenda.controller;
     opens org.axel.agenda.controller to javafx.fxml;

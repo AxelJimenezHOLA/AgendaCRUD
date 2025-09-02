@@ -108,7 +108,7 @@ public class TelefonoRepositoryMariaDB implements TelefonoRepository {
                 Connection conn = ConexionBaseDatos.obtenerConexion();
                 PreparedStatement stmt = conn.prepareStatement(sql)
         ) {
-            ResultSet rs = stmt.executeQuery(sql);
+            ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 telefonos.add(new Telefono(
                         rs.getInt("id"),

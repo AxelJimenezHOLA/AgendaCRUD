@@ -82,7 +82,7 @@ public class DireccionRepositoryMariaDB implements DireccionRepository {
                 Connection conn = ConexionBaseDatos.obtenerConexion();
                 PreparedStatement stmt = conn.prepareStatement(sql)
         ) {
-            ResultSet rs = stmt.executeQuery(sql);
+            ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 direcciones.add(new Direccion(rs.getInt("id"), rs.getString("calle")));
             }

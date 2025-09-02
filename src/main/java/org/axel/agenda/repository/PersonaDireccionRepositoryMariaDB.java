@@ -49,7 +49,7 @@ public class PersonaDireccionRepositoryMariaDB implements PersonaDireccionReposi
                 Connection conn = ConexionBaseDatos.obtenerConexion();
                 PreparedStatement stmt = conn.prepareStatement(sql)
         ) {
-            ResultSet rs = stmt.executeQuery(sql);
+            ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 relaciones.add(new PersonaDireccion(
                         rs.getInt("personaId"),
